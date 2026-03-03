@@ -1,0 +1,110 @@
+{
+  "student_metadata": {
+    "name": "Pranay Vishwakarma",
+    "roll_number": "230083",
+    "course": "Advanced Machine Learning",
+    "exam": "Mid-Semester Examination",
+    "part": "A",
+    "submission_date": "2026-03-03"
+  },
+  "llm_tools_used": [
+    {
+      "tool_name": "Grok",
+      "model": "Grok",
+      "provider": "Grok"
+    },
+    {
+      "tool_name": "scispace",
+      "model": "not specified",
+      "provider": "not specified"
+    },
+    {
+      "tool_name": "gemini",
+      "model": "gemini 3",
+      "provider": "Google"
+    }
+  ],
+  "full_llm_interaction_log": [
+    {
+        "interaction_id": 0,
+        "purpose": "find the research papers as per the requirements of the part A submission",
+        "full_prompt": "I am looking for peer-reviewed research papers published between 2009 and 2012 (inclusive) from the classical machine learning era, whose primary technical contribution is based on ARIMA/ARMA/SARIMA or state-space time-series variants, Gaussian Mixture Models (GMM) or EM-based clustering and mixture model variants, or Support Vector Machines (SVM) and kernel methods or their variants, and which are published in CORE A* venues (NeurIPS, ICML, JMLR, AISTATS, IEEE TPAMI, AAAI, IJCAI, CVPR, ICCV, ECCV, ACL, EMNLP, KDD, ICDM, ICDE), with the paper being a full conference or journal paper (not workshop, thesis, blog, technical report, arXiv-only, unpublished, dataset, benchmark, or system-only paper), and for each paper the output must include title, authors, year, venue, CORE ranking confirmation, method used (ARIMA/GMM/SVM), why it is a primary technical contribution, and a publisher or DOI link.",
+        "llm_response_summary": "it found around 80 research papers",
+        "how_it_helped": "not helped at all most of them are not relevent as per the constraings, and also very hard to implements and some are with liscensed datasets",
+        "confidence_level": 0
+    },
+    {
+      "interaction_id": 1,
+      "purpose": "Finding the relevent papers accoring the requirments",
+      "full_prompt": "find 20 research papers on Time-Series Models published by any CORE A* conference/journal publication, and must published between 2009 - 2012 (inclusive)",
+      "llm_response_summary": "compiled list of 20 research papers on Time-Series Models (including modeling, similarity, classification, motifs/shapelets, forecasting, periodicity, anomaly/motif discovery, compression, prediction, and related techniques for time series data) published in CORE A venues between 2009 and 2012 inclusive.*",
+      "how_it_helped": "Helped narrow the search to strictly eligible classical Time-Series papers.",
+      "confidence_level": 4
+    },
+    {
+      "interaction_id": 2,
+      "purpose": "Finding the relevent papers accoring the requirments",
+      "full_prompt": "find 20 research papers on Support Vector Machines (SVM), kernel methods, or variants published by any CORE A* conference/journal publication, and must published between 2009 – 2012 (inclusive)",
+      "llm_response_summary": "compiled list of 20 research papers on Support Vector Machines (SVM), kernel methods, or variants published in CORE A venues between 2009 and 2012 inclusive.*",
+      "how_it_helped": "Helped narrow the search to strictly eligible classical SVM papers.",
+      "confidence_level": 4
+    },
+    {
+      "interaction_id": 3,
+      "purpose": "Finding the relevent papers accoring the requirments",
+      "full_prompt": "find 20 research papers on Gaussian Mixture Models (GMM), EM-based clustering, or variants published by any CORE A* conference/journal publication, and must published between 2009 – 2012 (inclusive)",
+      "llm_response_summary": "compiled list of 20 research papers on Gaussian Mixture Models (GMM), EM-based clustering, or variants published in CORE A venues between 2009 and 2012 inclusive.*",
+      "how_it_helped": "Helped narrow the search to strictly eligible classical GMM papers.",
+      "confidence_level": 4
+    },
+    {
+      "interaction_id": 4,
+      "purpose": "Implementation feasibility check",
+      "full_prompt": "Can this paper be implemented in code? (Support Vector Machines (SVM), kernel methods, or variants)",
+      "llm_response_summary": "gave the code snippets for the implementation of the paper",
+      "how_it_helped": "ensured that the implementation was possible",
+      "confidence_level": 5
+    },
+    {
+      "interaction_id": 5,
+      "purpose": "the dataset availablity",
+      "full_prompt": "search the web and find the datasets mentioned in the paper",
+      "llm_response_summary": "gave the link to the datasets mentioned in the paper",
+      "how_it_helped": "helped to find the datasets mentioned in the paper",
+      "confidence_level": 4
+    }
+  ],
+  "top_5_prompts": [
+    {
+      "rank": 1,
+      "interaction_id": 2,
+      "why_important": "gave me the list of papers on svm according to the constraints, and i choosed one of them"
+    },
+    {
+      "rank": 2,
+      "interaction_id": 4,
+      "why_important": "verified that the paper can be implemented in code, and actually gave me some code"
+    },
+    {
+      "rank": 3,
+      "interaction_id": 5,
+      "why_important": "helped me to find the datasets mentioned in the paper"
+    },
+    {
+      "rank": null,
+      "interaction_id": null,
+      "why_important": ""
+    },
+    {
+      "rank": null,
+      "interaction_id": null,
+      "why_important": ""
+    }
+  ],
+  "student_declaration": {
+    "statement": "I declare that this JSON file contains a complete and honest record of my LLM usage for Part A.",
+    "understanding_acknowledged": true,
+    "signature": "Pranay Vishwakarma",
+    "date": "2026-03-03"
+  }
+}
