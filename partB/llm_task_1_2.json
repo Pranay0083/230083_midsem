@@ -1,0 +1,62 @@
+{
+  "student_metadata": {
+    "name": "Pranay Vishwakarma",
+    "roll_number": "230083",
+    "course": "Advanced Machine Learning",
+    "exam": "Mid-Semester Examination",
+    "part": "B",
+    "submission_date": "2026-03-12"
+  },
+  "llm_tools_used": [
+    {
+      "tool_name": "Gemini",
+      "model": "Gemini 2.5",
+      "provider": "Google"
+    }
+  ],
+  "full_llm_interaction_log": [
+    {
+      "interaction_id": 0,
+      "task_tag": "Task 1.2",
+      "purpose": "Identifying implicit assumptions in the paper",
+      "full_prompt": "What are the key assumptions in the Kernel Latent SVM paper that are specific to its method rather than general ML assumptions?",
+      "llm_response_summary": "Identified assumptions about discrete latent variables, PSD kernels, optimization convergence, and feature quality",
+      "how_it_helped": "Helped me identify four paper-specific assumptions with proper section references",
+      "code_used_verbatim": false,
+      "confidence_level": 4
+    }
+  ],
+  "top_5_prompts": [
+    {
+      "rank": 1,
+      "interaction_id": 0,
+      "why_important": "Key prompt for identifying all four assumptions specific to the paper"
+    },
+    {
+      "rank": null,
+      "interaction_id": null,
+      "why_important": ""
+    },
+    {
+      "rank": null,
+      "interaction_id": null,
+      "why_important": ""
+    },
+    {
+      "rank": null,
+      "interaction_id": null,
+      "why_important": ""
+    },
+    {
+      "rank": null,
+      "interaction_id": null,
+      "why_important": ""
+    }
+  ],
+  "student_declaration": {
+    "statement": "I declare that this JSON file contains a complete and honest record of my LLM usage for this task.",
+    "understanding_acknowledged": true,
+    "signature": "Pranay Vishwakarma",
+    "date": "2026-03-12"
+  }
+}

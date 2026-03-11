@@ -1,0 +1,8 @@
+numpy==1.26.4
+scikit-learn==1.4.2
+matplotlib==3.9.2
+seaborn==0.13.2
+scikit-image==0.22.0
+Pillow==10.4.0
+jupyter==1.0.0
+nbconvert==7.16.4

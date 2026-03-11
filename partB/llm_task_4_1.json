@@ -1,0 +1,62 @@
+{
+  "student_metadata": {
+    "name": "Pranay Vishwakarma",
+    "roll_number": "230083",
+    "course": "Advanced Machine Learning",
+    "exam": "Mid-Semester Examination",
+    "part": "B",
+    "submission_date": "2026-03-12"
+  },
+  "llm_tools_used": [
+    {
+      "tool_name": "Gemini",
+      "model": "Gemini 2.5",
+      "provider": "Google"
+    }
+  ],
+  "full_llm_interaction_log": [
+    {
+      "interaction_id": 0,
+      "task_tag": "Task 4.1",
+      "purpose": "Structuring the report",
+      "full_prompt": "Help me structure a 4-page report for KLSVM reproduction covering summary, results, ablation, failure, and reflection",
+      "llm_response_summary": "Provided an outline with key points for each section",
+      "how_it_helped": "Used the structure but wrote all content based on my own experimental results",
+      "code_used_verbatim": false,
+      "confidence_level": 4
+    }
+  ],
+  "top_5_prompts": [
+    {
+      "rank": 1,
+      "interaction_id": 0,
+      "why_important": "Guided the report structure and section organization"
+    },
+    {
+      "rank": null,
+      "interaction_id": null,
+      "why_important": ""
+    },
+    {
+      "rank": null,
+      "interaction_id": null,
+      "why_important": ""
+    },
+    {
+      "rank": null,
+      "interaction_id": null,
+      "why_important": ""
+    },
+    {
+      "rank": null,
+      "interaction_id": null,
+      "why_important": ""
+    }
+  ],
+  "student_declaration": {
+    "statement": "I declare that this JSON file contains a complete and honest record of my LLM usage for this task.",
+    "understanding_acknowledged": true,
+    "signature": "Pranay Vishwakarma",
+    "date": "2026-03-12"
+  }
+}

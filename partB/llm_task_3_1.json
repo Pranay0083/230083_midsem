@@ -1,0 +1,72 @@
+{
+  "student_metadata": {
+    "name": "Pranay Vishwakarma",
+    "roll_number": "230083",
+    "course": "Advanced Machine Learning",
+    "exam": "Mid-Semester Examination",
+    "part": "B",
+    "submission_date": "2026-03-12"
+  },
+  "llm_tools_used": [
+    {
+      "tool_name": "Gemini",
+      "model": "Gemini 2.5",
+      "provider": "Google"
+    }
+  ],
+  "full_llm_interaction_log": [
+    {
+      "interaction_id": 0,
+      "task_tag": "Task 3.1",
+      "purpose": "Choosing meaningful ablation components",
+      "full_prompt": "What are the most meaningful components to ablate in the Kernel Latent SVM method to understand its contributions?",
+      "llm_response_summary": "Suggested ablating subcategory mechanism and kernel choice as the two main components",
+      "how_it_helped": "Confirmed my choice of ablation components: subcategories and HIK kernel",
+      "code_used_verbatim": false,
+      "confidence_level": 4
+    },
+    {
+      "interaction_id": 1,
+      "task_tag": "Task 3.1",
+      "purpose": "Interpreting ablation results",
+      "full_prompt": "How to interpret ablation results when the performance drop is smaller than expected?",
+      "llm_response_summary": "Discussed factors like dataset size, class selection, and task difficulty",
+      "how_it_helped": "Informed the interpretation paragraphs explaining potential small gaps",
+      "code_used_verbatim": false,
+      "confidence_level": 3
+    }
+  ],
+  "top_5_prompts": [
+    {
+      "rank": 1,
+      "interaction_id": 0,
+      "why_important": "Guided the selection of ablation components"
+    },
+    {
+      "rank": 2,
+      "interaction_id": 1,
+      "why_important": "Helped write honest interpretations of results"
+    },
+    {
+      "rank": null,
+      "interaction_id": null,
+      "why_important": ""
+    },
+    {
+      "rank": null,
+      "interaction_id": null,
+      "why_important": ""
+    },
+    {
+      "rank": null,
+      "interaction_id": null,
+      "why_important": ""
+    }
+  ],
+  "student_declaration": {
+    "statement": "I declare that this JSON file contains a complete and honest record of my LLM usage for this task.",
+    "understanding_acknowledged": true,
+    "signature": "Pranay Vishwakarma",
+    "date": "2026-03-12"
+  }
+}

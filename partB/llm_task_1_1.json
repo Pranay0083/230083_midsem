@@ -1,0 +1,72 @@
+{
+  "student_metadata": {
+    "name": "Pranay Vishwakarma",
+    "roll_number": "230083",
+    "course": "Advanced Machine Learning",
+    "exam": "Mid-Semester Examination",
+    "part": "B",
+    "submission_date": "2026-03-12"
+  },
+  "llm_tools_used": [
+    {
+      "tool_name": "Gemini",
+      "model": "Gemini 2.5",
+      "provider": "Google"
+    }
+  ],
+  "full_llm_interaction_log": [
+    {
+      "interaction_id": 0,
+      "task_tag": "Task 1.1",
+      "purpose": "Understanding the step-by-step flow of KLSVM",
+      "full_prompt": "Explain the Kernel Latent SVM paper step by step from input to output, referencing specific equations",
+      "llm_response_summary": "Provided a breakdown of the method into 7 steps from problem setup through prediction",
+      "how_it_helped": "Helped structure my step-by-step description with proper equation references",
+      "code_used_verbatim": false,
+      "confidence_level": 4
+    },
+    {
+      "interaction_id": 1,
+      "task_tag": "Task 1.1",
+      "purpose": "Clarifying the dual formulation",
+      "full_prompt": "What is the relationship between the primal (Eq 1) and dual (Eq 2) forms in the KLSVM paper?",
+      "llm_response_summary": "Explained strong duality and how the kernel trick applies to the latent variable dual",
+      "how_it_helped": "Clarified the connection between primal and dual that I described in Step 3",
+      "code_used_verbatim": false,
+      "confidence_level": 4
+    }
+  ],
+  "top_5_prompts": [
+    {
+      "rank": 1,
+      "interaction_id": 0,
+      "why_important": "Foundational for structuring the entire Task 1.1 response"
+    },
+    {
+      "rank": 2,
+      "interaction_id": 1,
+      "why_important": "Clarified the kernel trick application to latent variables"
+    },
+    {
+      "rank": null,
+      "interaction_id": null,
+      "why_important": ""
+    },
+    {
+      "rank": null,
+      "interaction_id": null,
+      "why_important": ""
+    },
+    {
+      "rank": null,
+      "interaction_id": null,
+      "why_important": ""
+    }
+  ],
+  "student_declaration": {
+    "statement": "I declare that this JSON file contains a complete and honest record of my LLM usage for this task.",
+    "understanding_acknowledged": true,
+    "signature": "Pranay Vishwakarma",
+    "date": "2026-03-12"
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "student_metadata": {
+    "name": "Pranay Vishwakarma",
+    "roll_number": "230083",
+    "course": "Advanced Machine Learning",
+    "exam": "Mid-Semester Examination",
+    "part": "B",
+    "submission_date": "2026-03-12"
+  },
+  "llm_tools_used": [
+    {
+      "tool_name": "Gemini",
+      "model": "Gemini 2.5",
+      "provider": "Google"
+    }
+  ],
+  "full_llm_interaction_log": [
+    {
+      "interaction_id": 0,
+      "task_tag": "Task 1.3",
+      "purpose": "Understanding the baseline comparison",
+      "full_prompt": "What is the main baseline that Kernel Latent SVM compares against and what limitation does it address?",
+      "llm_response_summary": "Identified linear LSVM as the primary baseline and explained the parametric limitation",
+      "how_it_helped": "Confirmed my understanding of the linear vs kernel distinction",
+      "code_used_verbatim": false,
+      "confidence_level": 4
+    },
+    {
+      "interaction_id": 1,
+      "task_tag": "Task 1.3",
+      "purpose": "Reasoning about failure scenarios",
+      "full_prompt": "When would KLSVM NOT outperform linear LSVM? Think about small sample settings.",
+      "llm_response_summary": "Discussed overfitting risk with small datasets and kernel complexity",
+      "how_it_helped": "Helped formulate the small-sample failure scenario reasoning",
+      "code_used_verbatim": false,
+      "confidence_level": 3
+    }
+  ],
+  "top_5_prompts": [
+    {
+      "rank": 1,
+      "interaction_id": 0,
+      "why_important": "Essential for identifying the correct baseline"
+    },
+    {
+      "rank": 2,
+      "interaction_id": 1,
+      "why_important": "Helped construct the failure scenario argument"
+    },
+    {
+      "rank": null,
+      "interaction_id": null,
+      "why_important": ""
+    },
+    {
+      "rank": null,
+      "interaction_id": null,
+      "why_important": ""
+    },
+    {
+      "rank": null,
+      "interaction_id": null,
+      "why_important": ""
+    }
+  ],
+  "student_declaration": {
+    "statement": "I declare that this JSON file contains a complete and honest record of my LLM usage for this task.",
+    "understanding_acknowledged": true,
+    "signature": "Pranay Vishwakarma",
+    "date": "2026-03-12"
+  }
+}

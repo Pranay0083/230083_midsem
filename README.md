@@ -1,20 +1,18 @@
 # 📘 Advanced Machine Learning – Mid-Semester Examination
 
-**Student Name:** Vishesh
-**Enrolment No** 230129 
+**Student Name:** Pranay Vishwakarma  
+**Roll Number:** 230083  
 **Course:** Advanced Machine Learning  
 **Exam:** Mid-Semester Examination  
 
 **Selected Paper (Part A):**  
-**“Analysis of SVM with Indefinite Kernels” – NeurIPS 2009**
+**"Kernel Latent SVM for Visual Recognition" – NeurIPS 2012**
 
 ---
 
-# 📑 Overview
+## 📑 Overview
 
 This repository contains my complete submission for the Advanced Machine Learning Mid-Semester Examination.
-
-The exam consists of four parts:
 
 | Part | Description | Weightage |
 |------|------------|-----------|
@@ -23,94 +21,49 @@ The exam consists of four parts:
 | C | Explanation & Reasoning | 5% |
 | D | Case Study Questions | 60% |
 
-- Parts A & B: Open-book  
-- Parts C & D: Proctored  
+---
+
+## 📌 Part A – Research Paper Selection
+
+**Title:** Kernel Latent SVM for Visual Recognition  
+**Authors:** Wenze Hu, Yongfeng Zhu, Yang Wang, Jae-On Lee, Yiming Ying  
+**Venue:** NeurIPS 2012 (CORE A*)  
+**Unit:** Support Vector Machines / Kernel Methods  
+
+### Why This Paper?
+
+This paper proposes Kernel Latent SVM (KLSVM), a framework combining latent SVMs with kernel methods for visual recognition. It addresses the limitation of standard latent SVMs (linear models) by introducing a kernelized dual formulation that handles latent variables in a non-parametric way.
 
 ---
 
-# 📌 Part A – Research Paper Selection
+## 🔬 Part B – Reproduction & Experiments
 
-**Title:** Analysis of SVM with Indefinite Kernels  
-**Venue:** NeurIPS 2009 (CORE A*)  
-**Unit:** Support Vector Machines  
+### Structure
 
-## Why This Paper?
+```
+partB/
+├── task_1_1.ipynb          # Q1: Core Contribution / Architecture
+├── task_1_2.ipynb          # Q1: Key Assumptions
+├── task_1_3.ipynb          # Q1: What the Paper Claims to Improve
+├── task_2_1.ipynb          # Q2: Dataset Selection and Setup
+├── task_2_2.ipynb          # Q2: Reproduction of Contribution
+├── task_2_3.ipynb          # Q2: Result, Comparison, Reproducibility
+├── task_3_1.ipynb          # Q3: Two-Component Ablation
+├── task_3_2.ipynb          # Q3: Failure Mode
+├── report.md               # Q4: Written Report (markdown)
+├── llm_task_1_1.json       # LLM Usage Disclosures
+├── ...                     # (10 JSON files total)
+├── requirements.txt        # Python dependencies
+├── data/                   # Dataset files
+│   └── README.md           # Dataset documentation
+└── results/                # Plots and figures
+```
 
-I selected this paper because it extends classical Support Vector Machine theory to cases where kernel matrices are indefinite (not positive semidefinite). This is important in practice when similarity functions do not satisfy Mercer’s condition.
+### Key Experiments
 
-The paper satisfies all required constraints:
+- **Reproduction:** KLSVM with latent subcategories on CIFAR-10 (Sec 4.2 of paper)
+- **Ablation 1:** Remove latent subcategories (single component)
+- **Ablation 2:** Replace HIK kernel with linear kernel
+- **Failure Mode:** Highly overlapping class distributions
 
-- Published within the allowed time window  
-- Appears in a top-tier (A*) venue  
-- Primary contribution is classical SVM theory  
-- Not deep learning–based  
-- Not a survey or benchmarking paper  
-- Introduces a core theoretical idea  
-
----
-
-# 🔬 Part B – Reproduction & Experiments
-
-## Objective
-
-To experimentally demonstrate:
-
-- Behavior of SVM with indefinite kernels  
-- Effect of negative eigenvalues  
-- Impact of spectral correction  
-
-## Implementation Plan
-
-1. Construct an indefinite kernel matrix.
-2. Compute eigenvalues and verify negative values.
-3. Apply spectral correction (eigenvalue clipping).
-4. Train SVM using:
-   - Corrected kernel
-   - Standard PSD kernel (baseline)
-5. Compare accuracy and stability.
-
-## Tools Used
-
-- Python
-- NumPy
-- scikit-learn (`SVC` with precomputed kernel)
-- Matplotlib (optional)
-
-All experiments are CPU-based and reproducible on a standard laptop.
-
-## Key Observations
-
-- Indefinite kernels produce negative eigenvalues.
-- Spectral correction restores positive semidefiniteness.
-- SVM training stabilizes after correction.
-- Performance depends on degree of indefiniteness.
-
----
-
-# 🧠 Part C – Explanation & Reasoning (Proctored)
-
-In the proctored section, I will explain:
-
-- Why SVM requires PSD kernels.
-- What happens when kernels are indefinite.
-- Why eigenvalue clipping works.
-- Convex vs non-convex optimization behavior.
-- Design choices and parameter settings.
-
-I understand every implementation decision and experimental result.
-
----
-
-# 📊 Part D – Case Study Questions
-
-Part D will assess understanding of:
-
-- Time Series (ARIMA, stationarity, assumptions)
-- Support Vector Machines (margin, duality, kernels)
-- Gaussian Mixture Models (EM algorithm, likelihood, convergence)
-
-Preparation includes lecture notes, lab exercises, and conceptual revision.
-
----
-
-
+All experiments are CPU-based and reproducible.

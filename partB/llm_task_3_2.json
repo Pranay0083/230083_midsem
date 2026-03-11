@@ -1,0 +1,72 @@
+{
+  "student_metadata": {
+    "name": "Pranay Vishwakarma",
+    "roll_number": "230083",
+    "course": "Advanced Machine Learning",
+    "exam": "Mid-Semester Examination",
+    "part": "B",
+    "submission_date": "2026-03-12"
+  },
+  "llm_tools_used": [
+    {
+      "tool_name": "Gemini",
+      "model": "Gemini 2.5",
+      "provider": "Google"
+    }
+  ],
+  "full_llm_interaction_log": [
+    {
+      "interaction_id": 0,
+      "task_tag": "Task 3.2",
+      "purpose": "Designing a failure mode experiment",
+      "full_prompt": "Design a scenario where KLSVM would fail based on the assumptions identified in Task 1.2",
+      "llm_response_summary": "Suggested using visually similar classes with noise to violate feature discriminativeness assumption",
+      "how_it_helped": "Led to the cat vs dog with noise experiment design",
+      "code_used_verbatim": false,
+      "confidence_level": 4
+    },
+    {
+      "interaction_id": 1,
+      "task_tag": "Task 3.2",
+      "purpose": "Connecting failure to assumptions",
+      "full_prompt": "How does adding noise to features specifically violate the assumptions in Kernel Latent SVM?",
+      "llm_response_summary": "Explained connection to optimization landscape and feature discriminativeness assumptions",
+      "how_it_helped": "Strengthened the failure explanation connecting to Assumptions 2 and 4",
+      "code_used_verbatim": false,
+      "confidence_level": 4
+    }
+  ],
+  "top_5_prompts": [
+    {
+      "rank": 1,
+      "interaction_id": 0,
+      "why_important": "Core design of the failure mode experiment"
+    },
+    {
+      "rank": 2,
+      "interaction_id": 1,
+      "why_important": "Critical for connecting failure to paper assumptions"
+    },
+    {
+      "rank": null,
+      "interaction_id": null,
+      "why_important": ""
+    },
+    {
+      "rank": null,
+      "interaction_id": null,
+      "why_important": ""
+    },
+    {
+      "rank": null,
+      "interaction_id": null,
+      "why_important": ""
+    }
+  ],
+  "student_declaration": {
+    "statement": "I declare that this JSON file contains a complete and honest record of my LLM usage for this task.",
+    "understanding_acknowledged": true,
+    "signature": "Pranay Vishwakarma",
+    "date": "2026-03-12"
+  }
+}
