@@ -33,9 +33,13 @@ Both ablations reveal that KLSVM's advantage is data-dependent — with sufficie
 
 ## 4. Failure Mode
 
-Cat vs. dog classification with Gaussian noise: KLSVM consistently underperforms standard SVM by 3-6% across noise levels. These visually similar classes lack subcategory structure, so k-means produces arbitrary splits. This violates Assumptions 2 (optimization landscape) and 4 (feature discriminativeness) from Task 1.2.
+Cat vs. dog classification with Gaussian noise: KLSVM consistently underperforms standard SVM by 3–6% across noise levels. These visually similar classes lack subcategory structure, so k-means produces arbitrary splits. This violates two key assumptions of the method:
 
-**Suggested fix:** Automatically select K per class using silhouette scores, defaulting to K=1 when no structure exists.
+- **The optimization landscape has reasonable local optima:** The paper's alternating optimization (Eq. 5) is non-convex and only guarantees local optimality. When classes are visually similar (cat/dog share similar shapes, textures, and HOG responses), k-means initialization produces subcategory assignments that reflect noise patterns rather than meaningful visual modes. The alternating optimization gets trapped refining these meaningless splits, wasting model capacity.
+
+- **Feature representation is discriminative at each latent configuration:** The joint feature $\phi(x, h)$ must carry sufficient discriminative information for each subcategory $h$. Cat and dog images produce nearly identical HOG descriptors (similar furry textures, body contours, edge orientations), so $\phi(x, h)$ is barely above chance-level discriminative for any subcategory — adding subcategory structure just fragments an already weak signal.
+
+**Suggested fix:** Automatically select K per class using silhouette scores or gap statistics, defaulting to K=1 when no meaningful subcategory structure exists.
 
 ## 5. Reflection
 
